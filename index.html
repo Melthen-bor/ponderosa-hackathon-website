@@ -8,7 +8,8 @@
   </head>
   <body>
     <h1>Information</h1>
-    <p id="paragraph">Default text</p>
+    <p>Welcome to survivial information site. Please click next information button to continue.</p>
+    <p id="paragraph"></p>
     <button onclick="button_function()">Next information</button>
     <noscript>Client side scripting is disabled</noscript>
     <script>
@@ -17,11 +18,11 @@
         switch(info_set){
           case 0:
             info_set=1;
-            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+            document.getElementById("demo").innerHTML = "";
             break;
           case 1:
             info_set=2;
-            document.getElementById("demo").innerHTML = "Hello JavaScript2!";
+            document.getElementById("demo").innerHTML = "";
             break;
           default:
             info_set=0;
