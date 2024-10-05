@@ -2,13 +2,14 @@
 <html>
   <head>
     <style>
-      h1 {background-color:DodgerBlue;color:red}
+      h1 {color:red;}
       p {color:blue;border:2px solid Tomato;}
     </style>
   </head>
   <body>
     <h1>Information</h1>
     <p>Welcome to survivial information site. Please click next information button to continue.</p>
+    <h2 id="section"></h2>
     <p id="info"></p>
     <button onclick="button_function()">Next information</button>
     <noscript>Client side scripting is disabled</noscript>
@@ -18,14 +19,22 @@
         switch(info_set){
           case 0:
             info_set=1;
-            document.getElementById("info").innerHTML = "T1";
+            document.getElementById("section").innerHTML="Agriculture";
+            document.getElementById("info").innerHTML = "Earth plants must be grown in a special containment ";
             break;
           case 1:
             info_set=2;
-            document.getElementById("info").innerHTML = "T2";
+            document.getElementById("section").innerHTML="Ranching";
+            document.getElementById("info").innerHTML = "";
+            break;
+          case 2:
+            info_set=3;
+            document.getElementById("section").innerHTML="Foraging";
+            document.getElementById("info").innerHTML="";
             break;
           default:
             info_set=0;
+            document.getElementById("section").innerHTML="";
             document.getElementById("info").innerHTML = "";
             break;
         }
