@@ -13,6 +13,9 @@
     <p id="info"></p>
     <button onclick="button_function()">Next information</button>
     <noscript>Client side scripting is disabled</noscript>
+    <address>
+      Do not contact!
+    </address>
     <script>
       var info_set=0;
       function button_function(){
@@ -20,7 +23,7 @@
           case 0:
             info_set=1;
             document.getElementById("section").innerHTML="Agriculture";
-            document.getElementById("info").innerHTML = "Earth plants must be grown in a special containment ";
+            document.getElementById("info").innerHTML = "Earth plants must be grown in a special containment cell called a Argicell and the plant's natural environment must be inputted into the Argicell's control panel.";
             break;
           case 1:
             info_set=2;
