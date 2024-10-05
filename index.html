@@ -8,11 +8,13 @@
   </head>
   <body>
     <h1>Lorem Ipsum</h1>
-    <p>Lorem ipsum dolor sit amet</p>
-    <dialog open>Lorem ispum</dialog>
+    <p id="paragraph">Lorem ipsum dolor sit amet</p>
+    <button onclick="button_function()">Next information</button>
     <noscript>Client side scripting is disabled</noscript>
     <script>
-      
+      function button_function(){
+        document.getElementById("paragraph").innerHTML = "Hello JavaScript!";
+      }
     </script>
   </body>
 </html>
