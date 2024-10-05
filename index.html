@@ -9,8 +9,8 @@
     </style>
   </head>
   <body>
-    <h1>Information</h1>
-    <p>Welcome to survivial information site. Please click next information button to continue.</p>
+    <h1></h1>
+    <p>Welcome to  site. Please click next information button to continue.</p>
     <h2 id="section"></h2>
     <p id="info"></p>
     <button onclick="button_function()">Next information section</button>
@@ -24,23 +24,9 @@
         switch(info_set){
           case 0:
             info_set=1;
-            document.getElementById("section").innerHTML="Agriculture of earth plants";
-            document.getElementById("info").innerHTML = "Earth plants must be grown in a special containment cell called a Argicell and the plant's natural environment must be inputted into the Argicell's control panel.";
+            document.getElementById("section").innerHTML="";
+            document.getElementById("info").innerHTML="";
             break;
-          case 1:
-            info_set=2;
-            document.getElementById("section").innerHTML="Ranching of earth animals";
-            document.getElementById("info").innerHTML = "Ranching of earth creatures must be done in special domes";
-            break;
-          case 2:
-            info_set=3;
-            document.getElementById("section").innerHTML="Foraging";
-            document.getElementById("info").innerHTML="Do not Forage For Food!";
-            break;
-          case 3:
-            info_set=4;
-            document.getElementById("section").innerHTML="Security of resources";
-            document.getElementById("info").innerHTML="Some natives seem to thrive on theft so we have come up with a plan to thwart their theft. Remote-controlled lasers shall be surronding the resources.";
           default:
             info_set=0;
             document.getElementById("section").innerHTML="";
