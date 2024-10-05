@@ -7,13 +7,27 @@
     </style>
   </head>
   <body>
-    <h1>Lorem Ipsum</h1>
-    <p id="paragraph">Lorem ipsum dolor sit amet</p>
+    <h1>Information</h1>
+    <p id="paragraph">Default text</p>
     <button onclick="button_function()">Next information</button>
     <noscript>Client side scripting is disabled</noscript>
     <script>
+      var info_set=0;
       function button_function(){
-        document.getElementById("paragraph").innerHTML = "Hello JavaScript!";
+        switch(info_set){
+          case 0:
+            info_set=1;
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+            break;
+          case 1:
+            info_set=2;
+            document.getElementById("demo").innerHTML = "Hello JavaScript2!";
+            break;
+          default:
+            info_set=0;
+            document.getElementById("demo").innerHTML = "Default text";
+            break;
+        }
       }
     </script>
   </body>
